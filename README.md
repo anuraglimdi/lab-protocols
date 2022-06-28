@@ -34,4 +34,4 @@ To ensure that barcode switching is minimized in our Illumina NovaSeq run with >
 #### Choosing barcodes compatible with TnSeq primers.ipynb
 
 - I iterate over every pair of barcodes for the whole genome sequencing samples (WGS) and the TnSeq samples, and calculate the Hamming distance.
-- If the Hamming distance of a WGS barcode (compared against any TnSeq barcode) is greater than equal to 3, I exclude from use in any experiments for this sequencing run.
+- If the Hamming distance of a WGS barcode (compared against any TnSeq barcode) is less than 3, I exclude from use in any experiments for this sequencing run.
